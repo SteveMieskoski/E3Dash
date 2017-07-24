@@ -11,7 +11,7 @@ $('document').ready(function() {
 		redirectUri: AUTH0_CALLBACK_URL,
 		audience: 'https://' + AUTH0_DOMAIN + '/userinfo',
 		responseType: 'token id_token',
-		scope: 'openid profile user_metadata',
+		scope: 'openid profile',
 		leeway: 60
 	});
 
@@ -54,6 +54,7 @@ $('document').ready(function() {
 		localStorage.setItem('access_token', authResult.accessToken);
 		localStorage.setItem('id_token', authResult.idToken);
 		localStorage.setItem('expires_at', expiresAt);
+		localStorage.setItem('user_data', authResult.idTokenPayload['https://myapp.example.com/user_metadata']);
 	}
 
 	function logout() {
