@@ -5,6 +5,27 @@
   <title>Title</title>
 </head>
 <body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Auth0 - jQuery</a>
+
+      <!--<button id="btn-profile-view" class="btn btn-primary btn-margin">
+        Profile
+      </button>-->
+      <a id="btn-profile-view" class="btn btn-primary btn-margin" href="/E3Dash/index.html">Home</a>
+
+      <button id="btn-login" class="btn btn-primary btn-margin">
+        Log In
+      </button>
+
+      <button id="btn-logout" class="btn btn-primary btn-margin">
+        Log Out
+      </button>
+
+    </div>
+  </div>
+</nav>
 <table>
   <tr>
     <th>Project</th>
@@ -15,7 +36,7 @@
     <td id="project"></td>
     <td id="version"></td>
     <td id="download">
-      <form method="get" action="https://s3.amazonaws.com/advisor-app/IndustryGroups.xlsx">
+      <form method="get" action="">
       <button type="submit">Download!</button>
     </form>
     </td>
@@ -32,7 +53,7 @@
     <td >Haase Project</td>
     <td >Industry Group Data</td>
     <td >
-      <form id="industryExample" method="get" action="https://s3.amazonaws.com/advisor-app/IndustryGroups.xlsx">
+      <form id="industryExample" method="get" action="">
         <button type="submit">Download!</button>
       </form>
     </td>
@@ -41,7 +62,7 @@
     <td >Haase Project</td>
     <td> Wells Fargo Advisor Screen Result Data</td>
     <td >
-      <form id="wellsExample" method="get" action="https://s3.amazonaws.com/advisor-app/Stock_Import_WellsScreening.xlsx">
+      <form id="wellsExample" method="get" action="">
         <button type="submit">Download!</button>
       </form>
     </td>
@@ -50,13 +71,17 @@
     <td >Haase Project</td>
     <td >DW allStocks excel extract concatenated Data</td>
     <td >
-      <form id="allStockExample" method="get" action="https://s3.amazonaws.com/advisor-app/Stock_import_allStocks_DW_List.xlsx">
+      <form id="allStockExample" method="get" action="">
         <button type="submit">Download!</button>
       </form>
     </td>
   </tr>
 </table>
 
-
+<script src="auth0-variables.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/8.8/auth0.min.js"></script>
+<script src="app.js"></script>
+<script src="dashPart.js"></script>
 </body>
 </html>
