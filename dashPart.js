@@ -18,7 +18,7 @@ $('document').ready(function () {
 			'<td >' + userData.project[i].version +'</td>' +
 			'<td >' +
 			'<form  method="get" action="'+ userData.project[i].download +'">' +
-			'<button type="submit">Download!</button>' +
+			'<button type="submit" class="btn btn-primary btn-margin">Download!</button>' +
 			'</form>' +
 			'</td>' +
 			'</tr>';
