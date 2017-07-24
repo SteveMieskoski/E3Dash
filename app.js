@@ -54,7 +54,7 @@ $('document').ready(function() {
 		localStorage.setItem('access_token', authResult.accessToken);
 		localStorage.setItem('id_token', authResult.idToken);
 		localStorage.setItem('expires_at', expiresAt);
-		localStorage.setItem('user_data', authResult.idTokenPayload['https://myapp.example.com/user_metadata']);
+		localStorage.setItem('user_data', JSON.stringify(authResult.idTokenPayload['https://myapp.example.com/user_metadata']));
 	}
 
 	function logout() {
