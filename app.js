@@ -100,6 +100,7 @@ $('document').ready(function() {
 			webAuth.client.userInfo(accessToken, function(err, profile) {
 				if (profile) {
 					userProfile = profile;
+					console.log(profile);
 					displayProfile();
 				}
 			});
