@@ -2,7 +2,7 @@ $('document').ready(function() {
 	var content = $('.content');
 	var loadingSpinner = $('#loading');
 	content.css('display', 'block');
-	loadingSpinner.css('display', 'none');;
+	loadingSpinner.css('display', 'none');
 
 	var webAuth = new auth0.WebAuth({
 		domain: AUTH0_DOMAIN,
@@ -40,6 +40,7 @@ $('document').ready(function() {
 		var expiresAt = JSON.stringify(
 			authResult.expiresIn * 1000 + new Date().getTime()
 		);
+		console.log(authResult);
 		localStorage.setItem('access_token', authResult.accessToken);
 		localStorage.setItem('id_token', authResult.idToken);
 		localStorage.setItem('expires_at', expiresAt);
