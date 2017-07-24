@@ -79,7 +79,7 @@ $('document').ready(function() {
 			logoutBtn.css('display', 'inline-block');
 			profileViewBtn.css('display', 'inline-block');
 			loginStatus.text(
-				'You are logged in! You can now view your profile area.'
+				'You are logged in! You can now view the Project area.'
 			);
 		} else {
 			homeView.css('display', 'inline-block');
@@ -113,9 +113,9 @@ $('document').ready(function() {
 
 	function displayProfile() {
 		// display the profile
-		$('#profile-view .nickname').text(userProfile.nickname);
-		$('#profile-view .full-profile').text(JSON.stringify(userProfile, null, 2));
-		$('#profile-view img').attr('src', userProfile.picture);
+		//$('#profile-view .nickname').text(userProfile.nickname);
+		//$('#profile-view .full-profile').text(JSON.stringify(userProfile, null, 2));
+		//$('#profile-view img').attr('src', userProfile.picture);
 	}
 
 	function handleAuthentication() {
