@@ -55,6 +55,57 @@
         </div>
         <pre class="full-profile"></pre>
       </div>
+      <table>
+        <tr>
+          <th>Project</th>
+          <th>Version</th>
+          <th>Download</th>
+        </tr>
+        <tr>
+          <td id="project"></td>
+          <td id="version"></td>
+          <td id="download">
+            <form method="get" action="https://s3.amazonaws.com/advisor-app/IndustryGroups.xlsx">
+              <button type="submit">Download!</button>
+            </form>
+          </td>
+        </tr>
+      </table>
+      <h2>Example Data</h2>
+      <table>
+        <tr>
+          <th>Project</th>
+          <th>File</th>
+          <th>Download</th>
+        </tr>
+        <tr>
+          <td >Haase Project</td>
+          <td >Industry Group Data</td>
+          <td >
+            <form id="industryExample" method="get" action="https://s3.amazonaws.com/advisor-app/IndustryGroups.xlsx">
+              <button type="submit">Download!</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td >Haase Project</td>
+          <td> Wells Fargo Advisor Screen Result Data</td>
+          <td >
+            <form id="wellsExample" method="get" action="https://s3.amazonaws.com/advisor-app/Stock_Import_WellsScreening.xlsx">
+              <button type="submit">Download!</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td >Haase Project</td>
+          <td >DW allStocks excel extract concatenated Data</td>
+          <td >
+            <form id="allStockExample" method="get" action="https://s3.amazonaws.com/advisor-app/Stock_import_allStocks_DW_List.xlsx">
+              <button type="submit">Download!</button>
+            </form>
+          </td>
+        </tr>
+      </table>
     </div>
   </main>
 </div>
