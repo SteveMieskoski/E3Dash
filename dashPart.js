@@ -7,7 +7,7 @@ $('document').ready(function () {
 	$('#industryExample').attr('action', userData.industryExample);
 	$('#wellsExample').attr('action', userData.wellsExample);
 	$('#allStockExample').attr('action', userData.allStockExample);
-
+	$('#ProjectName').text(userData.ProjectName);
 	//$('#project').text(userData.project[0].project);
 	//$('#version').text(userData.project[0].version);
 	//$('#download').attr('action', userData.project[0].download);
